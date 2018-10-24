@@ -1,0 +1,1 @@
+http://sean-parent.stlab.cc/papers-and-presentations/#generic-programming
