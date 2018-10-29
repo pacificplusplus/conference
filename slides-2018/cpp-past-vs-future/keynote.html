@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C++ Past vs. Future</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      :root {
+        --blue-900: #174EA6;
+        --blue-600: #1A73E8;
+        --red-900: #A50E0E;
+        --red-600: #D93025;
+        --yellow-900: #E37400;
+        --yellow-600: #F9AB00;
+        --green-900: #0D652D;
+        --green-800: #137333;
+        --green-600: #1E8E3E;
+        --grey-500: #9AA0A6;
+        --grey-600: #80868B;
+        --grey-800: #3C4043;
+        --grey-900: #202124;
+
+        --red-fg: var(--red-600);
+        --red-bg: var(--red-900);
+        --red-bg-dark: #4C0909; /* darker than red-900 */
+        --blue-fg: var(--blue-600);
+        --blue-bg-dark: var(--blue-900);
+        --yellow-fg: var(--yellow-600);
+        --yellow-bg: var(--yellow-900);
+        --green-fg: var(--green-600);
+        --green-bg: var(--green-800);
+
+        --grey-mid: var(--grey-500);
+        --grey-bg: var(--grey-800);
+        --grey-bg-dark: var(--grey-900);
+
+        /* --bg-color: var(--grey-bg-dark); */
+        --bg-color: black;
+      }
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      a {
+        color: var(--blue-fg);
+        text-decoration: initial;
+      }
+      .left-col {
+        float: left;
+        width: 49%;
+      }
+      .right-col {
+        float: right;
+        width: 49%;
+      }
+      .center-col {
+			  display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .white-slide {
+        --bg-color: white;
+        width: 100%
+        height: 100%
+        background-color: #ffffff
+      }
+      .remark-container {
+        background-color: var(--bg-color);
+      }
+      .remark-slide-scaler {
+        -moz-box-shadow: 0 0 0 #000;
+        -webkit-box-shadow: 0 0 0 #000;
+        box-shadow: 0 0 0 #000;
+      }
+      .remark-slide-content {
+        background-color: var(--bg-color);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-size: 36px;
+        padding: 0.5em 1em 0.5em 1em
+      }
+      .remark-slide-content h1 {
+        font-size: 85px
+      }
+      .remark-slide-content h2 {
+        font-size: 75px
+      }
+      .remark-slide-content h3 {
+        font-size: 55px
+      }
+      .remark-code, .remark-inline-code {
+        font-family: 'Roboto Mono', monospace;
+      }
+      .remark-code {
+        font-size: 28px;
+      }
+      .remark-code-line-highlighted {
+        background-color: var(--red-bg-dark);
+        border-left: 5px solid var(--red-fg);
+        border-right: 5px solid var(--red-fg);
+        margin: -1px -7px 0px;
+        padding: 1px 2px 0px;
+      }
+      .remark-code-span-highlighted {
+        background-color: var(--red-bg-dark);
+        border: 5px solid var(--red-fg);
+        box-shadow: 0 0 30px var(--red-fg);
+        margin: -7px;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        // Set the slideshow display ratio
+        // Default: '4:3'
+        // Alternatives: '16:9', ...
+        ratio: '16:9',
+
+        // Syntax highlighting theme
+        highlightLanguage: 'cpp',
+        highlightStyle: 'ir-black',
+        highlightLines: true,
+        highlightSpans: true,
+
+        // Customize slide number label, either using a format string..
+        slideNumberFormat: '%current%',
+
+        sourceUrl: 'stability-velocity-talk.md',
+      });
+    </script>
+  </body>
+</html>
